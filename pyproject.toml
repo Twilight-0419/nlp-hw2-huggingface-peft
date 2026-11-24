@@ -1,0 +1,28 @@
+[project]
+name = "hw2-huggingface"
+version = "0.1.0"
+description = "NLP coursework on text classification and parameter-efficient fine-tuning"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "adapters>=1.2.0",
+    "bert-score>=0.3.13",
+    "datasets",
+    "decorator",
+    "einops",
+    "evaluate",
+    "nltk",
+    "numpy<2.0.0",
+    "peft>=0.17.0,<0.18.0",
+    "pyarrow<21.0.0",
+    "pytest",
+    "rouge-score",
+    "sacrebleu",
+    "scikit-learn",
+    "scipy",
+    "torch>=2.5.1,<2.6.0",
+    "wandb",
+]
+
+[project.optional-dependencies]
+npu = ["torch-npu"]
